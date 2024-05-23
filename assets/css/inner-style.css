@@ -72,7 +72,6 @@ li {
     display: grid;
     place-items: center;
 }
-
 .brade_crum p,
 .brade_crum p a {
     color: #fff;
@@ -83,6 +82,34 @@ li {
     color: #fff;
     letter-spacing: .5px;
 }
+
+#brade_crum2 {
+    background: url('../images/inner-top-banner.svg');
+    background-size: cover;
+    background-position: center, center;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+
+.brade_crum2 {
+    display: inline-block;
+    background: #0e0e0ea8;
+    position: absolute;
+    bottom: 50px;
+    padding: 10px;
+    padding-left: 5%;
+    padding-bottom: 0;
+    padding-right: 2%;
+}
+
+.brade_crum2 p,
+.brade_crum2 p a {
+    color: #fff;
+    text-decoration: none;
+}
+.brade_crum p a:hover, .brade_crum2 p a:hover{color: var(--its-primary-color);}
+
 
 .pt-5 {
     padding-top: 50px;
@@ -108,9 +135,11 @@ li {
 .txtbx h2 {
     color: #fff;
 }
+
 .campusbx {
     position: relative;
 }
+
 .c_txt {
     background: #393939;
     padding: 10px;
@@ -561,23 +590,49 @@ section.course_details {
     min-height: 150px;
     gap: 20px;
 }
+
 .feat_bx img {
     margin: auto;
 }
 
-.feachredbx .box1{border: 1px solid var(--its-primary-color); color: var(--its-primary-color); border-radius: 10px;}
+.feachredbx .box1 {
+    border: 1px solid var(--its-primary-color);
+    color: var(--its-primary-color);
+    border-radius: 10px;
+}
 
 /* Vice chairmen */
 
 
-.vice-cha{position: relative;}
+.vice-cha {
+    position: relative;
+}
 
 .v_txt {
-    background:var(--its-primary-color);
+    background: var(--its-primary-color);
     padding: 10px;
     position: absolute;
     bottom: 0;
     width: 100%;
     color: #fff;
 }
-.v_txt h5{margin-bottom: 0px;}
+
+.v_txt h5 {
+    margin-bottom: 0px;
+}
+
+
+/* Gallery */
+
+.photobx img {
+    border-radius: 5px;
+    width: 100%;
+    min-height: 200px;
+    object-fit: cover;
+}
+
+.photobx p,
+.videobx p,
+.viewbx_360 p {
+    padding: 15px 0px;
+}

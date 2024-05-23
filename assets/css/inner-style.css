@@ -1,0 +1,583 @@
+@media (min-width: 1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1230px;
+    }
+}
+
+.color-a {
+    color: #ab241b;
+}
+
+.color-b {
+    color: #3b75a59d;
+}
+
+.color-c {
+    color: #0096879f;
+}
+
+.color-d {
+    color: #df950079;
+}
+
+.color-e {
+    color: #ADA7A7;
+}
+
+
+/* innerpage css  */
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.section_padding {
+    padding: 100px 0px;
+}
+
+.form-control:focus,
+.form-control:visited {
+    outline: none;
+    box-shadow: none;
+
+}
+
+.form-select:focus,
+.form-select:focus-visible {
+    outline: none;
+    box-shadow: none;
+
+}
+
+.txt-white {
+    color: #fff;
+}
+
+/* Top Banner css */
+
+#brade_crum {
+    background: url('../images/inner-top-banner.svg');
+    background-size: cover;
+    background-position: center, center;
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    place-items: center;
+}
+
+.brade_crum p,
+.brade_crum p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.brade_crum h2 {
+    color: #fff;
+    letter-spacing: .5px;
+}
+
+.pt-5 {
+    padding-top: 50px;
+}
+
+.pb-5 {
+    padding-bottom: 50px;
+}
+
+.txtbx .ch-namebx {
+    background: var(--its-primary-color);
+    ;
+    padding: 30px 40px;
+    width: 125%;
+    z-index: 99;
+    color: #fff;
+}
+
+.txtbx p {
+    padding: 30px 40px;
+}
+
+.txtbx h2 {
+    color: #fff;
+}
+.campusbx {
+    position: relative;
+}
+.c_txt {
+    background: #393939;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.c_txt h5 {
+    color: #fff;
+}
+
+.c_txt a {
+    color: var(--its-secondry-color);
+    text-decoration: none;
+}
+
+@media(max-width:600px) {
+    .txtbx .ch-namebx {
+        width: 100%;
+    }
+}
+
+
+
+
+/* C */
+.select_bx {
+    background: var(--its-primary-color);
+    border-radius: 10px;
+}
+
+.select_bx select.form-select:hover,
+.select_bx select.form-select:focus,
+.select_bx select.form-select:visited {
+    box-shadow: none !important;
+    outline: none;
+    border: 1px solid #fff !important;
+}
+
+.select_bx select.form-select {
+    background: transparent;
+    color: #fff;
+}
+
+.select_bx option {
+    background: var(--its-primary-color);
+    ;
+    border-radius: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+.affliations_table tr td a img {
+    text-align: center;
+    margin: auto;
+}
+
+.affliations_table tr td {
+    font-weight: 600;
+}
+
+.affliations_table thead tr th {
+    background: #D3D3CB !important;
+    padding: 15px;
+}
+
+
+.accord button.accordion-button {
+    background: var(--its-primary-color);
+    ;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.accord .accordion-item {
+    border: none;
+}
+
+.nested_accordion button.accordion-button {
+    background: #D3D3CB;
+    color: #393939;
+    border-bottom: 1px solid #0000002b;
+}
+
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.accordion-button::after {
+    color: #fff !important;
+}
+
+.side_accord button.accordion-button {
+    background-color: #363636;
+    color: #fff;
+}
+
+.side_accord .accordion-body {
+    background-color: #363636;
+    color: #fff;
+}
+
+.listbx li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.listbx li a:hover {
+    color: var(--its-secondry-color);
+}
+
+.accordion-button a {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.listbx li a i {
+    margin-right: 10px;
+}
+
+.CSR_ctivities .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background: var(--its-primary-color);
+    font-size: var(--its-h5-fontsize);
+    font-weight: 500;
+    color: #fff;
+}
+
+.CSR_ctivities .nav-tabs {
+    border-bottom: 1px solid;
+}
+
+.accordion-button img {
+    margin-right: 20px;
+}
+
+.downlaodbx {
+    position: absolute;
+    right: 30px;
+}
+
+.downlaodbx a {
+    color: var(--its-primary-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.downlaodbx a i {
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+/* Change the arrow color for collapsed state */
+.accordion-button.collapsed::after {
+    color: #fff !important;
+}
+
+/* Change the arrow color for expanded state if needed */
+.accordion-button:not(.collapsed)::after {
+    color: #fff !important;
+}
+
+/* Seminars css */
+
+.datebx {
+    display: grid;
+    align-items: center;
+    place-content: center;
+    /* margin: auto; */
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    height: auto;
+}
+
+.semi_bx {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #e8e8e800;
+    position: relative;
+}
+
+.samidata p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Faculty page css */
+
+.facultybx {
+    padding: 20px;
+    border: 1px solid #D3D3CB;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fac_img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.fac_img img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #bababa;
+}
+
+.factxt h3 {
+    font-size: 18px;
+    color: var(--its-primary-color);
+    padding-top: 10px;
+    margin: 0px;
+}
+
+.factxt h4 {
+    font-size: 16px;
+    color: var(--its-txt-primary-color);
+}
+
+.factxt a {
+    text-decoration: none;
+    color: var(--its-txt-primary-color)
+}
+
+
+/* Career csss */
+.select_bx label {
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+
+.career_bx ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.career_bx ul li p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.c_btn {
+    background: #AB241B;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.career_bx {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 20px;
+}
+
+/* Contact page css */
+
+#contact-us .form-group lable {
+    font-weight: 600;
+    line-height: 40px;
+}
+
+#contact-us .form-control:focus,
+#contact-us .form-control:visited {
+    outline: none;
+    box-shadow: none;
+    border-color: #AB241B;
+}
+
+#contact-us .form-select:focus,
+#contact-us .form-select:focus-visible {
+    outline: none;
+    box-shadow: none;
+    border-color: #AB241B;
+}
+
+#contact-us input::placeholder {
+    font-size: 14px;
+}
+
+#contact-us .form-select {
+    font-size: 14px;
+}
+
+#contact-us .form-group label {
+    font-weight: 600;
+}
+
+textarea.form-control::placeholder {
+    color: #000;
+}
+
+/* Current Publications  Page*/
+.current_publications li {
+    list-style: disc;
+    list-style-position: outside;
+    line-height: 25px;
+}
+
+ul.current_publications {
+    padding-left: 15px;
+}
+
+/* course page css */
+
+.course_bx ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.course_bx .h5 {
+    font-weight: 800;
+}
+
+.course_bx ul li p {
+    margin-bottom: 0px;
+}
+
+.course_bx ul li a i {
+    font-size: 30px;
+    color: #ab241b;
+}
+
+.course_bx {
+    border-bottom: 1px solid #aaa;
+    padding: 20px 0PX;
+}
+
+.course_bx strong {
+    font-weight: 600;
+}
+
+/* Course Details page */
+.back_btn.btn {
+    width: 100px;
+    background: #ff9800;
+    padding: 10px;
+    color: #fff;
+    border: none;
+}
+
+.back_btn.btn:hover {
+    width: 100px;
+    background: #ff9800;
+    padding: 10px;
+    color: #fff;
+    border: none;
+}
+
+section.course_details {
+    background: #ff98002b;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.outline_btn {
+    border: 1px solid #ab241b;
+    color: #aa241b;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.outline_btn:hover {
+    border: 1px solid #ab241b;
+    background-color: #aa241b;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.non-bg-table tr {
+    border-bottom: transparent;
+}
+
+.non-bg-table th,
+.non-bg-table td {
+    background: transparent;
+}
+
+.disk-list li {
+    list-style: disc;
+    line-height: 20px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+}
+
+
+/* Admission Brochures */
+.admission-bro ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #ff000014;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.admission-bro ul li p {
+    margin-bottom: 0px;
+}
+
+/* Contact Admission Cell */
+.admi_cell tr th {
+    background: #f0f0f0;
+}
+
+/* Admission Open 2024 */
+.admi_bx a {
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0px 30px;
+}
+
+
+/* placement css */
+.feat_bx {
+    display: grid;
+    align-items: center;
+    place-content: center;
+    margin: auto;
+    text-align: center;
+    min-height: 150px;
+    gap: 20px;
+}
+.feat_bx img {
+    margin: auto;
+}
+
+.feachredbx .box1{border: 1px solid var(--its-primary-color); color: var(--its-primary-color); border-radius: 10px;}
+
+/* Vice chairmen */
+
+
+.vice-cha{position: relative;}
+
+.v_txt {
+    background:var(--its-primary-color);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+.v_txt h5{margin-bottom: 0px;}

@@ -78,9 +78,11 @@ li {
     text-decoration: none;
 }
 
-.brade_crum h2 {
+.brade_crum h2,
+.brade_crum2 h2 {
     color: #fff;
     letter-spacing: .5px;
+    display: none;
 }
 
 #brade_crum2 {
@@ -635,4 +637,32 @@ section.course_details {
 .videobx p,
 .viewbx_360 p {
     padding: 15px 0px;
+}
+
+/* for all top heading */
+.top_hdeadin {
+    /* background: #ab241b;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff; */
+    margin-bottom: 20px ;
+    border-bottom: 1px solid;
+}
+
+/* shining-it-sians css */
+.shiningbx {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background:#3939390f;
+    padding: 20px;
+}
+.shiningbx img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+.shinin_txtbx p {
+    margin-bottom: 5px;
 }

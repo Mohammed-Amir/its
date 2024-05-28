@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Step Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .step-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ccc;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .step.active .circle {
+            background-color: #4CAF50;
+            transform: scale(1.2);
+        }
+
+        .label {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .bar {
+            width: 50px;
+            height: 4px;
+            background-color: #ccc;
+            margin: 0 10px;
+            position: relative;
+        }
+
+        .bar.active::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #4CAF50;
+            animation: grow 0.5s ease-in-out forwards;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        @keyframes grow {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="step-container">
+        <div class="step active" id="step-1">
+            <div class="circle">1</div>
+            <div class="label">Step 1</div>
+        </div>
+        <div class="bar"></div>
+        <div class="step" id="step-2">
+            <div class="circle">2</div>
+            <div class="label">Step 2</div>
+        </div>
+        <div class="bar"></div>
+        <div class="step" id="step-3">
+            <div class="circle">3</div>
+            <div class="label">Step 3</div>
+        </div>
+        <div class="bar"></div>
+        <div class="step" id="step-4">
+            <div class="circle">4</div>
+            <div class="label">Step 4</div>
+        </div>
+        <div class="bar"></div>
+        <div class="step" id="step-5">
+            <div class="circle">5</div>
+            <div class="label">Step 5</div>
+        </div>
+    </div>
+
+    <div class="content active" id="content-1">
+        <h2>Content for Step 1</h2>
+        <p>This is the content for step 1.</p>
+    </div>
+    <div class="content" id="content-2">
+        <h2>Content for Step 2</h2>
+        <p>This is the content for step 2.</p>
+    </div>
+    <div class="content" id="content-3">
+        <h2>Content for Step 3</h2>
+        <p>This is the content for step 3.</p>
+    </div>
+    <div class="content" id="content-4">
+        <h2>Content for Step 4</h2>
+        <p>This is the content for step 4.</p>
+    </div>
+    <div class="content" id="content-5">
+        <h2>Content for Step 5</h2>
+        <p>This is the content for step 5.</p>
+    </div>
+
+    <div class="controls">
+        <button onclick="prevStep()">Previous</button>
+        <button onclick="nextStep()">Next</button>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        const totalSteps = 5;
+
+        function updateSteps() {
+            for (let i = 1; i <= totalSteps; i++) {
+                const step = document.getElementById(`step-${i}`);
+                const content = document.getElementById(`content-${i}`);
+                const bar = step.nextElementSibling;
+
+                if (i < currentStep) {
+                    step.classList.add('active');
+                    if (bar) bar.classList.add('active');
+                    if (content) content.classList.remove('active');
+                } else if (i === currentStep) {
+                    step.classList.add('active');
+                    if (content) content.classList.add('active');
+                    if (bar) bar.classList.remove('active');
+                } else {
+                    step.classList.remove('active');
+                    if (content) content.classList.remove('active');
+                    if (bar) bar.classList.remove('active');
+                }
+            }
+        }
+
+        function nextStep() {
+            if (currentStep < totalSteps) {
+                currentStep++;
+                updateSteps();
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                updateSteps();
+            }
+        }
+
+        updateSteps();
+    </script>
+</body>
+
+</html>

@@ -25,6 +25,64 @@
     <!--  -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        .feat_bx {
+            transition: transform 0.3s ease;
+        }
+
+        .feat_bx svg,
+        .feat_bx img {
+            transition: filter 0.3s ease;
+            transform: scale(1.05);
+        }
+
+        .feat_bx:hover .box1 svg,
+        .feat_bx:hover img {
+            filter: invert(1);
+        }
+
+        .testimonialsbx {
+            background: #ff9800;
+        }
+
+        /* video */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio */
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .video_testimonialsbx {
+            position: relative;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: auto;
+        }
+    </style>
 </head>
 
 
@@ -436,7 +494,7 @@
     <!-- inner top banner  start-->
     <section id="brade_crum2">
         <div class="brade_crum2">
-            <p> <a href="#"><i class="fa fa-home"></i> </a> | Placements
+            <p> <a href="#"><i class="fa fa-home"></i> </a> | Placements </p>
             <h2>Placements </h2>
         </div>
     </section>
@@ -659,25 +717,109 @@
             </div>
         </div>
     </section>
-    
+
 
     <section>
-        <div class="container">
+        <div class="container ">
             <div class="row feachredbx">
-                <div class="col-lg-2 col-md-4 col-sm-12 text-center"><div class="feat_bx box1"><svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7632 35.8215C24.0515 35.94 24.3654 36 24.6773 36C24.8871 36 25.0935 35.9733 25.2894 35.9222C25.3928 35.8954 25.4936 35.8618 25.5907 35.8215C28.8131 34.4769 32.3938 33.7747 36.0282 33.7747C39.6627 33.7747 43.2433 34.4769 46.4657 35.8215C46.754 35.94 47.0679 36 47.3798 36C47.9034 36 48.4055 35.8336 48.7757 35.5374C49.146 35.2412 49.354 34.8395 49.354 34.4207V4.41309C49.354 3.89664 49.0381 3.41178 48.509 3.11644C41.4128 -0.832822 32.0019 -1.0286 24.6778 2.5291C17.3521 -1.0286 7.94127 -0.832822 0.846924 3.11644C0.585503 3.26191 0.371946 3.4558 0.224472 3.68158C0.0769982 3.90737 -1.59002e-05 4.15834 2.4623e-09 4.41309V34.4207C0.00089749 34.692 0.0889835 34.9586 0.255798 35.1948C0.422613 35.4311 0.662552 35.629 0.952573 35.7697C1.24259 35.9104 1.57295 35.989 1.91193 35.9981C2.2509 36.0072 2.5871 35.9464 2.88823 35.8215C6.11063 34.4769 9.6913 33.7747 13.3257 33.7747C16.9602 33.7747 20.5408 34.4769 23.7632 35.8215ZM26.6515 31.9851V5.26564C29.4755 3.88695 32.7199 3.15754 36.0282 3.15754C39.3368 3.15754 42.5814 3.88705 45.4056 5.26593V31.9853C42.3871 31.0724 39.2067 30.616 36.0282 30.616C32.8249 30.6157 29.6481 31.0795 26.6515 31.9851ZM22.7025 31.9851C19.6841 31.0724 16.504 30.616 13.3257 30.616C10.1222 30.6157 6.94515 31.0796 3.94836 31.9853V5.26593C6.77254 3.88705 10.0171 3.15754 13.3257 3.15754C16.6341 3.15754 19.8785 3.88695 22.7025 5.26564V31.9851Z" fill="#FC6D65"/>
-                    </svg><h6>Course</h6></div></div>
-                <div class="col-lg-2 col-md-4 col-sm-12 text-center"><div class="feat_bx box2"><img src="assets/images/icons/fee.svg"        alt="feachred_icon"><h6>Fee Structure</h6></div></div>
-                <div class="col-lg-2 col-md-4 col-sm-12 text-center"><div class="feat_bx box3"><img src="assets/images/icons/placement.svg"  alt="feachred_icon"><h6>Placement</h6></div></div>
-                <div class="col-lg-2 col-md-4 col-sm-12 text-center"><div class="feat_bx box4"><img src="assets/images/icons/research.svg"   alt="feachred_icon"><h6>Research & Publication </h6></div></div>
-                <div class="col-lg-2 col-md-4 col-sm-12 text-center"><div class="feat_bx box5"><img src="assets/images/icons/award.svg"      alt="feachred_icon"><h6>Award & Ranking</h6></div></div>
-                <div class="col-lg-2 col-md-4 col-sm-12 text-center"><div class="feat_bx box6"><img src="assets/images/icons/admission.svg" alt="feachred_icon"><h6>Admission Brochures</h6></div></div>
+                <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                    <div class="feat_bx box1"><svg width="50" height="36" viewBox="0 0 50 36" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M23.7632 35.8215C24.0515 35.94 24.3654 36 24.6773 36C24.8871 36 25.0935 35.9733 25.2894 35.9222C25.3928 35.8954 25.4936 35.8618 25.5907 35.8215C28.8131 34.4769 32.3938 33.7747 36.0282 33.7747C39.6627 33.7747 43.2433 34.4769 46.4657 35.8215C46.754 35.94 47.0679 36 47.3798 36C47.9034 36 48.4055 35.8336 48.7757 35.5374C49.146 35.2412 49.354 34.8395 49.354 34.4207V4.41309C49.354 3.89664 49.0381 3.41178 48.509 3.11644C41.4128 -0.832822 32.0019 -1.0286 24.6778 2.5291C17.3521 -1.0286 7.94127 -0.832822 0.846924 3.11644C0.585503 3.26191 0.371946 3.4558 0.224472 3.68158C0.0769982 3.90737 -1.59002e-05 4.15834 2.4623e-09 4.41309V34.4207C0.00089749 34.692 0.0889835 34.9586 0.255798 35.1948C0.422613 35.4311 0.662552 35.629 0.952573 35.7697C1.24259 35.9104 1.57295 35.989 1.91193 35.9981C2.2509 36.0072 2.5871 35.9464 2.88823 35.8215C6.11063 34.4769 9.6913 33.7747 13.3257 33.7747C16.9602 33.7747 20.5408 34.4769 23.7632 35.8215ZM26.6515 31.9851V5.26564C29.4755 3.88695 32.7199 3.15754 36.0282 3.15754C39.3368 3.15754 42.5814 3.88705 45.4056 5.26593V31.9853C42.3871 31.0724 39.2067 30.616 36.0282 30.616C32.8249 30.6157 29.6481 31.0795 26.6515 31.9851ZM22.7025 31.9851C19.6841 31.0724 16.504 30.616 13.3257 30.616C10.1222 30.6157 6.94515 31.0796 3.94836 31.9853V5.26593C6.77254 3.88705 10.0171 3.15754 13.3257 3.15754C16.6341 3.15754 19.8785 3.88695 22.7025 5.26564V31.9851Z"
+                                fill="#FC6D65" />
+                        </svg>
+                        <h6>Course</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                    <div class="feat_bx box2"><img src="assets/images/icons/fee.svg" alt="feachred_icon">
+                        <h6>Fee Structure</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                    <div class="feat_bx box3"><img src="assets/images/icons/placement.svg" alt="feachred_icon">
+                        <h6>Placement</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                    <div class="feat_bx box4"><img src="assets/images/icons/research.svg" alt="feachred_icon">
+                        <h6>Research & Publication </h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                    <div class="feat_bx box5"><img src="assets/images/icons/award.svg" alt="feachred_icon">
+                        <h6>Award & Ranking</h6>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12 text-center">
+                    <div class="feat_bx box6"><img src="assets/images/icons/admission.svg" alt="feachred_icon">
+                        <h6>Admission Brochures</h6>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-     
+
     </section>
+
+
+
+    <section id="our-star">
+        
+        <div  id="videoCarousel" class="carousel slide container" data-bs-ride="carousel">
+            <div  class="row">
+                <div class="col-lg-6">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="video-container">
+                                <video src="assets/images/student.mp4" controls></video>
+                                <div class="play-icon" onclick="togglePlay(this)">
+                                    <i class="bi bi-play-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="video-container">
+                                <video src="assets/images/student.mp4" controls></video>
+                                <div class="play-icon" onclick="togglePlay(this)">
+                                    <i class="bi bi-play-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more carousel-item divs as needed -->
+                    </div>
+                   
+                </div>
+                <div class="col-lg-6 text-center">
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                
+                    <h1>Lorem ipsum dolor sit amet.</h1>
+                </div>
+               
+            </div>
+           
+        </div>
+    </section>
+
+
+
+
+
+
+
 
 
 
@@ -826,13 +968,18 @@
 
 
     <script>
-        var accordions = document.querySelectorAll('.accordion');
-        accordions.forEach(function (accordion) {
-            new bootstrap.Collapse(accordion, {
-                toggle: false
-            });
-        });
+        function togglePlay(icon) {
+            const video = icon.previousElementSibling;
+            if (video.paused) {
+                video.play();
+                icon.style.display = 'none';
+            } else {
+                video.pause();
+                icon.style.display = 'block';
+            }
+        }
     </script>
+
 
 </body>
 

@@ -626,13 +626,40 @@ ul.current_publications {
 .feat_bx img {
     margin: auto;
 }
-
+.feachredbx{margin: 20px 0px ;}
+.feat_bx {margin: 10px 0px;}
 .feachredbx .box1 {
     border: 1px solid var(--its-primary-color);
     color: var(--its-primary-color);
     border-radius: 10px;
 }
+.feachredbx .box2 {
+    border: 1px solid #01C0D1;
+    color:#01C0D1;
+    border-radius: 10px;
+}
+.feachredbx .box3 {
+    border: 1px solid #009688;
+    color:#009688;
+    border-radius: 10px;
+}
+.feachredbx .box4 {
+    border: 1px solid #1A83A8;
+    color:#1A83A8;
+    border-radius: 10px;
+}
 
+.feachredbx .box5 {
+    border: 1px solid #789D4A;
+    color:#789D4A;
+    border-radius: 10px;
+}
+
+.feachredbx .box6 {
+    border: 1px solid #FF9800;
+    color:#FF9800;
+    border-radius: 10px;
+}
 /* Vice chairmen */
 
 

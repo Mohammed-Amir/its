@@ -626,40 +626,80 @@ ul.current_publications {
 .feat_bx img {
     margin: auto;
 }
-.feachredbx{margin: 20px 0px ;}
-.feat_bx {margin: 10px 0px;}
+
+.feachredbx {
+    margin: 20px 0px;
+}
+
+.feat_bx {
+    margin: 10px 0px;
+}
+
 .feachredbx .box1 {
     border: 1px solid var(--its-primary-color);
     color: var(--its-primary-color);
     border-radius: 10px;
 }
+
 .feachredbx .box2 {
     border: 1px solid #01C0D1;
-    color:#01C0D1;
+    color: #01C0D1;
     border-radius: 10px;
 }
+
 .feachredbx .box3 {
     border: 1px solid #009688;
-    color:#009688;
+    color: #009688;
     border-radius: 10px;
 }
+
 .feachredbx .box4 {
     border: 1px solid #1A83A8;
-    color:#1A83A8;
+    color: #1A83A8;
     border-radius: 10px;
 }
 
 .feachredbx .box5 {
     border: 1px solid #789D4A;
-    color:#789D4A;
+    color: #789D4A;
     border-radius: 10px;
 }
 
 .feachredbx .box6 {
     border: 1px solid #FF9800;
-    color:#FF9800;
+    color: #FF9800;
     border-radius: 10px;
 }
+
+#videoCarousel {
+    padding: 0px;
+    background: #ff9800;
+}
+
+#videoCarousel button {
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+    border: 1px solid #aaa;
+}
+
+.v_controls {padding:20px;}
+@media(min-width:769px) {
+    .v_controls {
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+    }
+}
+.v_controls h1 {
+    font-weight: bold;
+}
+
+.play-icon i {
+    font-size: 120px;
+}
+
 /* Vice chairmen */
 
 
@@ -828,7 +868,9 @@ ul.current_publications {
 .testibox p {
     margin-bottom: 5px;
 }
+
 p.subtxt {
     font-size: 13px;
 }
+
 .te

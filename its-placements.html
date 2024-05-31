@@ -27,60 +27,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-
     <style>
-        .feat_bx {
-            transition: transform 0.3s ease;
-        }
-
-        .feat_bx svg,
-        .feat_bx img {
-            transition: filter 0.3s ease;
-            transform: scale(1.05);
-        }
-
-        .feat_bx:hover .box1 svg,
-        .feat_bx:hover img {
-            filter: invert(1);
-        }
-
-        .testimonialsbx {
-            background: #ff9800;
-        }
-
-        /* video */
         .video-container {
             position: relative;
             width: 100%;
-            padding-top: 56.25%;
-            /* 16:9 Aspect Ratio */
+            max-width: 100%;
         }
-
         .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
+            height: auto;
         }
-
         .play-icon {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 48px;
+            font-size: 64px;
             color: white;
             cursor: pointer;
+            opacity: 0.7;
         }
-
-        .video_testimonialsbx {
-            position: relative;
+        .play-icon:hover {
+            opacity: 1;
         }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: auto;
+        .carousel-controls {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -767,54 +738,47 @@
 
 
     <section id="our-star">
-        
-        <div  id="videoCarousel" class="carousel slide container" data-bs-ride="carousel">
-            <div  class="row">
+        <div id="videoCarousel" class="carousel slide container" data-bs-ride="carousel">
+            <div class="row">
                 <div class="col-lg-6">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="video-container">
-                                <video src="assets/images/student.mp4" controls></video>
+                                <video src="assets/images/student.mp4"></video>
                                 <div class="play-icon" onclick="togglePlay(this)">
-                                    <i class="bi bi-play-circle"></i>
+                                    <i class="fa fa-play-circle-o"></i>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="video-container">
-                                <video src="assets/images/student.mp4" controls></video>
+                                <video src="assets/images/student.mp4"></video>
                                 <div class="play-icon" onclick="togglePlay(this)">
-                                    <i class="bi bi-play-circle"></i>
+                                    <i class="fa fa-play-circle-o"></i>
                                 </div>
                             </div>
                         </div>
-                        <!-- Add more carousel-item divs as needed -->
                     </div>
-                   
                 </div>
-                <div class="col-lg-6 text-center">
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
-                
-                    <h1>Lorem ipsum dolor sit amet.</h1>
+                <div class="col-lg-6 ">
+                    <div class="v_controls">
+                        <h1>Listen From Our Star Performers.</h1>
+                        <div class="carousel-controls">
+                            <button class="" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                  
                 </div>
-               
             </div>
-           
         </div>
     </section>
-
-
 
 
 
@@ -967,6 +931,7 @@
 
 
 
+ 
     <script>
         function togglePlay(icon) {
             const video = icon.previousElementSibling;
@@ -977,6 +942,12 @@
                 video.pause();
                 icon.style.display = 'block';
             }
+            video.onplay = function() {
+                icon.style.display = 'none';
+            };
+            video.onpause = function() {
+                icon.style.display = 'block';
+            };
         }
     </script>
 

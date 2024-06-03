@@ -213,16 +213,16 @@ p {
 }
 
 
-.affliations_table tr td a img {
+.table_head tr td a img {
     text-align: center;
     margin: auto;
 }
 
-.affliations_table tr td {
+/* .table_head tr td {
     font-weight: 600;
-}
+} */
 
-.affliations_table thead tr th {
+.table_head thead tr th {
     background: #D3D3CB !important;
     padding: 15px;
 }
@@ -935,10 +935,51 @@ p.subtxt {
 }
 
 /* placement  */
+.video-container {
+    position: relative;
+    width: 100%;
+
+    height: 339px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.play-icon:hover {
+    opacity: 1;
+}
+
+.carousel-controls {
+    margin-top: 20px;
+}
+
+/*  slider css  */
+.carousel-inner .carousel-item {
+    display: none;
+}
+
+.carousel-inner .carousel-item.active {
+    display: block;
+}
+
 #top-company {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
 }
 
@@ -954,10 +995,84 @@ p.subtxt {
     justify-content: center;
     align-items: center;
 }
- 
+
 
 #top-company img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+/* Center align the last row */
+#top-company ul::after {
+    content: '';
+    flex-grow: 1;
+}
+
+.accordion-item .customNextBtn,
+.accordion-item .customPreviousBtn {
+    float: right;
+    border: none !important;
+    padding: 6px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.nested_accordion .accordion-button::after,
+.nested_accordion .accordion-button::before {
+    display: none;
+}
+
+/* .nested_accordion .tabingbx {
+    position: absolute;
+    right: 0;
+} */
+.accordion-hed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #d3d3cb;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+}
+
+.accordion-hed h6 {
+    font-weight: 400;
+}
+
+.nested_accordion .accordion-item {
+    border: 1px solid #aaa;
+    margin-bottom: 10px;
+}
+
+.testimonialsbx {
+    background: #3939390f;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.student_img img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.student_txtbx p {
+    margin-bottom: 5px;
+}
+
+/* corporate  student */
+.corpo_img {
+    background: #aaa;
+    padding: 20px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.corpo_img img {
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    object-fit:contain;
 }

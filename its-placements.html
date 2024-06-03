@@ -33,10 +33,12 @@
             width: 100%;
             max-width: 100%;
         }
+
         .video-container video {
             width: 100%;
             height: auto;
         }
+
         .play-icon {
             position: absolute;
             top: 50%;
@@ -47,9 +49,11 @@
             cursor: pointer;
             opacity: 0.7;
         }
+
         .play-icon:hover {
             opacity: 1;
         }
+
         .carousel-controls {
             margin-top: 20px;
         }
@@ -774,13 +778,35 @@
                             </button>
                         </div>
                     </div>
-                  
+
                 </div>
             </div>
         </div>
     </section>
 
 
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="top-company">
+                        <ul>
+                            <li><img src="assets/images/top-comany/1.png" width="100%" alt=""></li>
+                            <li><img src="assets/images/top-comany/2.png" width="100%" alt=""></li>
+                            <li><img src="assets/images/top-comany/3.png" width="100%" alt=""></li>
+                            <li><img src="assets/images/top-comany/4.png" width="100%" alt=""></li>
+                            <li><img src="assets/images/top-comany/5.png" width="100%" alt=""></li>
+                            <li><img src="assets/images/top-comany/6.png" width="100%" alt=""></li>
+                            <li><img src="assets/images/top-comany/7.png" width="100%" alt=""></li>
+                            <li><img src="assets/images/top-comany/8.png" width="100%" alt=""></li>
+                            <li><img src="assets/images/top-comany/9.png" width="100%" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -931,7 +957,7 @@
 
 
 
- 
+
     <script>
         function togglePlay(icon) {
             const video = icon.previousElementSibling;
@@ -942,10 +968,10 @@
                 video.pause();
                 icon.style.display = 'block';
             }
-            video.onplay = function() {
+            video.onplay = function () {
                 icon.style.display = 'none';
             };
-            video.onpause = function() {
+            video.onpause = function () {
                 icon.style.display = 'block';
             };
         }

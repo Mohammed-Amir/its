@@ -172,3 +172,15 @@ jQuery(document).ready(function($) {
   });
      
   });
+
+
+  
+  //  Image Model
+  $(document).ready(function () {
+    $('.modelbx-images img').click(function () {
+        var imgSrc = $(this).attr('src');
+        $('#modalImage').attr('src', imgSrc);
+        $('#imageModal').modal('show');
+    });
+});
+

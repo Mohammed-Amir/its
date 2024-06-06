@@ -435,55 +435,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Career csss */
-.select_bx label {
-    color: #fff;
-    padding: 10px 0px;
-    font-size: 16px;
-}
-
-.career_bx ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
-}
-
-.career_bx ul li p {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-
-.c_btn {
-    background: #AB241B;
-    color: #fff;
-    padding: 8px 20px;
-    border-radius: 5px;
-}
-
-.career_bx {
-    border: 1px solid #aaa;
-    border-radius: 10px;
-    margin: 20px 0px;
-    padding: 20px;
-}
-
 /* Contact page css */
 
 #contact-us .form-group lable {
@@ -1124,4 +1075,90 @@ p.subtxt {
     width: 100%;
     height: 150px;
     object-fit: contain;
+}
+
+
+/*  */
+/* Career page css */
+.car_btn {
+    width: 160px;
+    border: 1px solid var(--its-primary-color);
+    color:var(--its-primary-color);
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.car_btn:hover{
+    width: 160px;
+    background-color: var(--its-primary-color);
+    border: 1px solid var(--its-primary-color);
+    color: rgb(255, 255, 255);
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+.select_bx label {
+    color: #fff;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+
+.career_bx ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.career_bx ul li p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.c_btn {
+    background: #AB241B;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+}
+
+.career_bx {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin: 20px 0px;
+    padding: 20px;
+}
+.check_bx label {
+    padding: 0px 10px;
+}
+button.remove {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: red;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 4px;
+}
+
+
+.form-check .form-check-input {
+    width:  18px;
+    height: 18px;
+}
+.check_bx {
+    display: flex;
+}
+.form-check .form-check-input:checked {
+    background-color: #ff9800 !important;
+    border-color: #ff9800 !important;
+    box-shadow: none;
+
+}
+
+.upload_info {
+    font-size: 10px;
 }

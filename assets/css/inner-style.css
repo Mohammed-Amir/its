@@ -422,6 +422,7 @@ p {
     text-align: center;
     margin-bottom: 0;
 }
+
 .txt_bx p {
     text-align: left;
 }
@@ -430,6 +431,7 @@ p {
     list-style: auto;
     padding-bottom: 15px;
 }
+
 .sub_list li {
     list-style: none;
 }
@@ -1083,13 +1085,14 @@ p.subtxt {
 .car_btn {
     width: 160px;
     border: 1px solid var(--its-primary-color);
-    color:var(--its-primary-color);
+    color: var(--its-primary-color);
     margin: 20px 0px;
     padding: 10px 0px;
     border-radius: 5px;
     background-color: transparent;
 }
-.car_btn:hover{
+
+.car_btn:hover {
     width: 160px;
     background-color: var(--its-primary-color);
     border: 1px solid var(--its-primary-color);
@@ -1131,9 +1134,11 @@ p.subtxt {
     margin: 20px 0px;
     padding: 20px;
 }
+
 .check_bx label {
     padding: 0px 10px;
 }
+
 button.remove {
     width: 40px;
     height: 40px;
@@ -1146,12 +1151,14 @@ button.remove {
 
 
 .form-check .form-check-input {
-    width:  18px;
+    width: 18px;
     height: 18px;
 }
+
 .check_bx {
     display: flex;
 }
+
 .form-check .form-check-input:checked {
     background-color: #ff9800 !important;
     border-color: #ff9800 !important;
@@ -1161,4 +1168,22 @@ button.remove {
 
 .upload_info {
     font-size: 10px;
+}
+
+
+.detail-page lable {
+    color: #ADA7A7;
+}
+
+.detail-page .form-group lable {
+    line-height: 0 !important;
+}
+
+/*  */
+.bg_red {
+    background: #ab241b;
+    padding: 10px;
+    padding-bottom: 1px;
+    color: #fff;
+    margin-bottom: 10px;
 }

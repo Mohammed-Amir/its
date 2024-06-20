@@ -294,7 +294,8 @@ p {
     color: #fff;
 }
 
-.CSR_ctivities .nav-tabs {
+.CSR_ctivities .nav-tabs,
+.aqar_bx .nav-tabs {
     border-bottom: 1px solid;
 }
 
@@ -759,8 +760,7 @@ ul.current_publications {
 /* shining-it-sians css */
 .shiningbx {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-start !important;
     gap: 20px;
     background: #3939390f;
     padding: 20px;
@@ -770,10 +770,23 @@ ul.current_publications {
     width: 200px;
     height: 150px;
     object-fit: cover;
+    align-items: flex-start !important;
 }
 
 .shinin_txtbx p {
     margin-bottom: 5px;
+}
+
+@media(max-width:1025px) {
+    .shiningbx {
+        display: flex;
+        align-items: flex-start !important;
+        flex-wrap: wrap;
+        gap: 20px;
+        background: #3939390f;
+        padding: 20px;
+    }
+
 }
 
 /* Bullet List */
@@ -1025,10 +1038,7 @@ p.subtxt {
     display: none;
 }
 
-/* .nested_accordion .tabingbx {
-    position: absolute;
-    right: 0;
-} */
+
 .accordion-hed {
     display: flex;
     align-items: center;
@@ -1186,4 +1196,51 @@ button.remove {
     padding-bottom: 1px;
     color: #fff;
     margin-bottom: 10px;
+}
+
+
+
+/* Aqar Date Slider */
+.aqar_bx {
+    overflow-x: scroll;
+    width: 94%;
+    position: relative;
+    display: flex;
+    height: 40px;
+    flex-direction: column;
+    border-bottom: 1px solid #202020 !important;
+    margin: auto !important;
+}
+
+.aqar_bx {
+    -webkit-scrollbar {
+        display: none;
+    }
+}
+
+.aqar_bx ul::-webkit-scrollbar {
+    display: none;
+}
+
+.aqar_bx {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.aqar_bx li {
+    width: 148px;
+}
+
+.aqar_date_slider {
+    display: flex;
+    align-items: center;
+}
+
+.arrow-icon a {
+    background: #ab241b;
+    color: #fff;
+    width: 20px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px 8px;
 }

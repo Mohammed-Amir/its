@@ -25,6 +25,42 @@
     <!--  -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+        }
+
+        thead th {
+            background-color: #343a40;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+
+            th,
+            td {
+                white-space: nowrap;
+            }
+        }
+
+        .center-align {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 
 
@@ -447,36 +483,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-lg-9  col-md-9 col-sm-12 pt-5 pb-5">
-
-                    <div class="row select_bx p-3  align-items-center">
-                        <div class="col-lg-6 col-md-6 col-sm-12 ">
-                            <div class="form-group ">
-                                <label for="ITS Institutions">ITS Institutions</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>All</option>
-                                    <option value="1">Institute of Techonology & Science</option>
-                                    <option value="2">Institute of Techonology & Science</option>
-                                    <option value="3">Institute of Techonology & Science</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12 ">
-                            <div class="form-group ">
-                                <label for="Choose Course">Choose Course</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>All</option>
-                                    <option value="1">BCA</option>
-                                    <option value="2">MCA</option>
-                                    <option value="3">MBA</option>
-                                </select>
-                            </div>
-                        </div>
-
-                    </div>
-
-
+                <div class="col-lg-9  col-md-9 col-sm-12 pb-5">
                     <div class="row mt-5">
                         <div class="col-lg-12">
                             <h5>Scholarships for Courses @ I.T.S Ghaziabad </h5>
@@ -497,48 +504,63 @@
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
                                             PGDM - PGDM (2023-25 Batch)
+
+                                            <span class="icon">▼</span>
+
                                         </button>
                                     </h2>
 
                                     <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="1"
                                         data-bs-parent="#accordionExample">
                                         <div class="accordion-body p-0">
-                                            <div class="bg-light mt-4 mb-4 p-4">
+                                            <div class="bg-light mt-2 mb-4 p-4">
+
+
                                                 <h5 class="color-a">Fee Structure</h5>
-                                                <table class="table table-responsive non-bg-table ">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Course & Campus</th>
-                                                            <th scope="col">First Year 1st Installment</th>
-                                                            <th scope="col">2st Installment</th>
-                                                            <th scope="col">Second Year 1st Installment</th>
-                                                            <th scope="col">2st Installment</th>
-                                                            <th scope="col">Total Course Fee</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>PGDM at Ghaziabad Campus</td>
-                                                            <td>Rs. 1,50,000/-</td>
-                                                            <td>Rs. 1,50,000/-</td>
-                                                            <td>Rs. 1,50,000/-</td>
-                                                            <td>Rs. 1,50,000/-</td>
-                                                            <td>Rs 6,00,000/-</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Due dates for payment of fees</td>
-                                                            <td>As specified in the admission letter</td>
-                                                            <td>31st October 2021</td>
-                                                            <td>30th April 2022</td>
-                                                            <td>15th October 2022</td>
-                                                            <td>Rs 6,00,000/-</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                <div class="table-container">
+                                                    <table class="table table-bordered">
+                                                        <thead class="table-dark">
+                                                            <tr>
+                                                                <th scope="col" class="center-align">Course & Campus
+                                                                </th>
+                                                                <th scope="col" class="center-align">First Year 1st
+                                                                    Installment</th>
+                                                                <th scope="col" class="center-align">2st Installment
+                                                                </th>
+                                                                <th scope="col" class="center-align">Second Year 1st
+                                                                    Installment</th>
+                                                                <th scope="col" class="center-align">2st Installment
+                                                                </th>
+                                                                <th scope="col" class="center-align">Total Course Fee
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="center-align">PGDM at Ghaziabad Campus</td>
+                                                                <td class="center-align">Rs. 1,50,000/-</td>
+                                                                <td class="center-align">Rs. 1,50,000/-</td>
+                                                                <td class="center-align">Rs. 1,50,000/-</td>
+                                                                <td class="center-align">Rs. 1,50,000/-</td>
+                                                                <td class="center-align">Rs 6,00,000/-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="center-align">Due dates for payment of fees
+                                                                </td>
+                                                                <td class="center-align">As specified in the admission
+                                                                    letter</td>
+                                                                <td class="center-align">31st October 2021</td>
+                                                                <td class="center-align">30th April 2022</td>
+                                                                <td class="center-align">15th October 2022</td>
+                                                                <td class="center-align">Rs 6,00,000/-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                                 <P class="color-e">Note: Fine is leviable beyond due date</P>
                                             </div>
 
-                                            <div class="bg-light mt-4 mb-4 p-4">
+                                            <div class="bg-light mt-4 p-4">
                                                 <h5 class="color-a">Bank Details</h5>
                                                 <table class="table table-responsive mt-2 non-bg-table mt-4">
                                                     <thead>
@@ -599,13 +621,249 @@
 
                                                 <address>
                                                     Institute of Technology & Science <br>
-                                                    Accredited by NAAC with Grade 'A'& ISO 9001:2008 Certified
+                                                    (Accredited by NAAC with Grade 'A'& ISO 9001:2008 Certified
                                                     Institute) <br>
                                                     Mohan Nagar, Ghaziabad – 201007 Mobile : 8447744044/43/42/77 <br>
                                                     E-mail : admissions.mn@its.edu.in <br>
                                                     Website: http://www.itsim.edu.in <br>
                                                 </address>
+
+
+
                                             </div>
+
+                                            <div class="bg-light mt-4 mb-4 p-4">
+
+                                                <h5>Attractive Scholarship For Candidates Seeking Admission In Pgdm
+                                                    (2023-25 Batch)</h5>
+                                                <br>
+                                                <h6>Scholarship on the basis of MAT/ATMA score:</h6>
+                                                <div class="table-container mb-4">
+                                                    <table class="table table-bordered">
+                                                        <thead class="table-dark">
+                                                            <tr>
+                                                                <th class="center-align">CS No</th>
+                                                                <th class="center-align">GMAT/ATMA Score</th>
+                                                                <th class="center-align">cholarship amount (One Time
+                                                                    Only)</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="center-align">1</td>
+                                                                <td class="center-align">625-700</td>
+                                                                <td class="center-align">Rs. 40,000/-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="center-align">2</td>
+                                                                <td class="center-align">701 and above</td>
+                                                                <td class="center-align">Rs. 50,000/-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <h6>Scholarship on the basis of CMAT Rank:</h6>
+                                                <div class="table-container mb-4">
+                                                    <table class="table table-bordered">
+                                                        <thead class="table-dark">
+                                                            <tr>
+                                                                <th class="center-align">S No</th>
+                                                                <th class="center-align">CMAT Rank</th>
+                                                                <th class="center-align">Scholarship amount(One Time
+                                                                    Only)</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="center-align">1</td>
+                                                                <td class="center-align">4001 to 10000</td>
+                                                                <td class="center-align">Rs. 40,000/-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="center-align">2</td>
+                                                                <td class="center-align">71 to 4000</td>
+                                                                <td class="center-align">Rs. 50,000/-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <h6>Scholarship on the basis of CAT/XAT Percentile:</h6>
+                                                <div class="table-container mb-4">
+                                                    <table class="table table-bordered">
+                                                        <thead class="table-dark">
+                                                            <tr>
+                                                                <th class="center-align">S No</th>
+                                                                <th class="center-align">CAT/XAT %</th>
+                                                                <th class="center-align">Scholarship amount(One Time
+                                                                    Only)</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="center-align">1</td>
+                                                                <td class="center-align">60-70</td>
+                                                                <td class="center-align">Rs. 40,000/-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="center-align">2</td>
+                                                                <td class="center-align">7>70 and above</td>
+                                                                <td class="center-align">Rs. 50,000/-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <h6>Scholarship on the basis of Academic Performance:</h6>
+                                                <div class="table-container mb-4">
+                                                    <table class="table table-bordered">
+                                                        <thead class="table-dark">
+                                                            <tr>
+                                                                <th class="center-align">S No</th>
+                                                                <th class="center-align">%age of Marks in both:
+                                                                    1Graduation 2Either in class 10th or 12th</th>
+                                                                <th class="center-align">Scholarship amount(One Time
+                                                                    Only)</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="center-align">1</td>
+                                                                <td class="center-align">70% – 75% (65%-70% for Govt.
+                                                                    Uni.) </td>
+                                                                <td class="center-align">Rs. 40,000/-</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="center-align">2</td>
+                                                                <td class="center-align">More than 75%(>70% for Govt.
+                                                                    University)</td>
+                                                                <td class="center-align">Rs. 50,000/-</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <br>
+                                                    <h5>Note:</h5>
+                                                    <p>*The marks of Physical Education subject will not be considered
+                                                        in final calculation of percentage.</p>
+
+
+                                                    <ul class="disk-list">
+                                                        <li>The candidate falling in more than one category shall be
+                                                            entitled to avail only one scholarship amount whichever is
+                                                            the highest.</li>
+                                                        <li>Limited Seats are available on the basis of first come first
+                                                            served.</li>
+                                                        <li>This Scholarship amount will be adjusted in the second
+                                                            instalment of first year fees.</li>
+                                                        <li>Scholarship to be given/not to be given will be sole
+                                                            discretion of the Institute.</li>
+                                                    </ul>
+
+
+                                                </div>
+                                                <h5>Scholarship Scheme For Academically Sound Candidates Seeking
+                                                    Admission In Pgdm (2023 -25 Batch)</h5>
+                                                <h6>Scholarship on the basis of Academic Percentage:-</h6>
+                                                <div class="table-container">
+                                                    <table class="table table-bordered">
+                                                        <thead class="table-dark">
+                                                            <tr>
+                                                                <th class="center-align">Category</th>
+                                                                <th class="center-align">Graduation % age</th>
+                                                                <th class="center-align">12th %age</th>
+                                                                <th class="center-align">10th %age</th>
+                                                                <th class="center-align">Scholarship Amount</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="center-align">1</td>
+                                                                <td>75% and above</td>
+                                                                <td rowspan="3" class="center-align">75% and above
+                                                                    (Without extra subject)
+                                                                </td>
+                                                                <td rowspan="3" class="center-align">75% and above</td>
+                                                                <td rowspan="3" class="center-align">Rs 1 Lac</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="center-align">2</td>
+                                                                <td>60% and above (For B Tech)</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="center-align">3</td>
+                                                                <td>60% and above (For Graduates of Prescribed
+                                                                    University*)</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <br>
+
+                                                <p>*DU, JNU, Calcutta University, University of North Bengal Siliguri,
+                                                    Utkal University Bhubaneswer, BHU, AMU,
+                                                    Allahabad University, Lucknow University, Patna University, Ranchi
+                                                    University, Vinoba Bhave University
+                                                    Hazaribag, Kanpur University, University of Rajasthan (Jaipur),
+                                                    Panjab University or Any State/Central Govt
+                                                    University from North Eastern States.</p>
+                                                <br>
+                                                <h6>Scholarship on the basis of CAT Percentile:-</h6>
+                                                <div class="table-container">
+                                                    <table class="table table-bordered">
+                                                        <thead class="table-dark">
+                                                            <tr>
+                                                                <th class="center-align">S.No.</th>
+                                                                <th class="center-align">CAT Percentile</th>
+                                                                <th class="center-align">Scholarship Amount</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="center-align">1</td>
+                                                                <td class="center-align">80 and above</td>
+                                                                <td class="center-align">Rs 1 Lac</td>
+
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <br>
+                                                <h5>Note:</h5>
+                                                <p>The marks of Physical Education subject will not be considered in
+                                                    final calculation of percentage.</p>
+
+
+                                                <ul class="disk-list">
+                                                    <li>The scheme shall remain valid for 15 seats only.</li>
+                                                    <li>Graduates through Distance Mode or Correspondence or from
+                                                        Private University will not fall under this scheme.</li>
+
+                                                    <li>The candidate falling in more than one category shall be
+                                                        entitled to avail only one scholarship.</li>
+                                                    <li>The scholarship amount will be adjusted in two installments of
+                                                        Rs. 50000/- each to be adjusted towards
+                                                        academic fee dues as second installment (first year) & Fourth
+                                                        installment (second year).</li>
+                                                </ul>
+
+                                                <address>
+                                                    Institute of Technology & Science <br>
+                                                    (Accredited by NAAC with Grade'A' &
+                                                    ISO9001:2008CertifiedInstitute)<br>
+                                                    Mohan Nagar, Ghaziabad – 201007 Mobile : 8447744044/43/42/77
+                                                    <br>
+                                                    E-mail : admissions.mn@its.edu.in, Website: www.itsim.edu.in
+                                                </address>
+                                            </div>
+
+
+
+
 
                                         </div>
 
@@ -613,7 +871,6 @@
                                     </div>
 
                                 </div>
-
 
                                 <!-- 2nd Accordion Item -->
                                 <div class="accordion-item">
@@ -621,63 +878,279 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
                                             aria-controls="collapse2">
-                                            MCA
+                                            Scholarships for MCA@I.T.S Ghaziabad
+                                            <span class="icon">▼</span>
                                         </button>
                                     </h2>
                                     <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="2"
                                         data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body p-0">
+                                            <div class="bg-light mt-2 mb-4 p-4">
+                                                <h5>Scholarships for Meritorious Graduate Students at the time of
+                                                    Admission to MCA@I.T.S Ghaziabad.: Coming Soon</h5>
+                                                <h6>Academic Excellence: Students with the following credentials will be
+                                                    eligible for scholarship:
+                                                </h6>
+                                                <p>The students getting first three positions at the institute in their
+                                                    cumulative performance on yearly basis will get following awards:
+                                                </p>
+                                                <table class="table table-responsive mt-2 non-bg-table mt-4">
+                                                    <thead>
 
+                                                        <tr>
+                                                            <th>First position</th>
+                                                            <td>Rs. 15,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Second position</th>
+                                                            <td>Rs. 10,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Third position</th>
+                                                            <td>Rs. 5,000.00</td>
+                                                        </tr>
+
+                                                    </thead>
+
+                                                </table>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <!-- 3rd Accordion Item -->
-                                <div class="accordion-item">
+                                <div class="accordion-item ">
+
                                     <h2 class="accordion-header" id="3">
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
                                             aria-controls="collapse3">
-                                            MBA
+                                            Scholarships for MBA@I.T.S Ghaziabad
+                                            <span class="icon">▼</span>
                                         </button>
                                     </h2>
                                     <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="3"
                                         data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body p-0">
+                                            <div class="bg-light mt-2 mb-4 p-4">
+                                                <h5>Academic Performance Awards</h5>
 
+                                                <h6>Merit Award</h6>
+                                                <p>For II year students based on their performance in I year End
+                                                    semester
+                                                    examination. It is awarded to top three meritorious students of each
+                                                    batch at the end of each year. First topper gets a scholarship of
+                                                    Rs.
+                                                    15,000/- , Second topper gets a scholarship of Rs. 10,000/- and
+                                                    third
+                                                    topper gets a scholarship of Rs. 5,000/-.</p>
+                                                <br>
+                                                <h6>Performance Improvement Award</h6>
+                                                <p>It is awarded to top 10 students who show maximum improvement in
+                                                    terms of
+                                                    increase in percentage from the previous semester exams to the next
+                                                    semester exams of I and II year respectively.</p>
+
+                                            </div>
                                         </div>
                                     </div>
+
+
                                 </div>
 
-                                <!-- 4th Accordion Item -->
+                                <!-- 5th Accordion Item -->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="4">
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
                                             aria-controls="collapse4">
-                                            BBA & BCA
+                                            SCHOLARSHIPS AND AWARDS FOR BCA/BBA @ I.T.S- UG CAMPUS, GHAZIABAD
+                                            <span class="icon">▼</span>
                                         </button>
                                     </h2>
                                     <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="4"
                                         data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body p-0">
+                                            <div class="bg-light mt-2 mb-4 p-4">
+                                                <h6>SCHOLARSHIPS AND AWARDS</h6>
+                                                <p>To encourage academic Performance and to reward excellence in
+                                                    academics,
+                                                    I.T.S has instituted a system of awarding scholarships to
+                                                    deserving
+                                                    Students.</p>
+                                                <p>Scholarships are to be awarded to the Students at the time of
+                                                    admission.
+                                                    These scholarships, in the form of discount in fees are offered
+                                                    to
+                                                    students who have secured a certain percentage in class XII
+                                                    (percentage
+                                                    of all five subjects, excluding any additional subject).</p>
+                                                <p>The details are enumerated as below:</p>
+                                                <ul class="disk-list">
+                                                    <li>Topper’s Scholarship Scheme</li>
+                                                    <li>Merit Scholarship Scheme</li>
+                                                    <li>Siblings Scholarship Scheme</li>
+                                                    <li>Scholarship under Sports Category</li>
+                                                    <li>Scholarship for Jammu & Kashmir and North East Region</li>
+                                                    <li>Scholarship under Defence Category</li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="5">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                                            aria-controls="collapse4">
+                                            Scholarships for BDS/MDS@I.T.S Dental College, Murad Nagar
+                                            <span class="icon">▼</span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="5"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body p-0">
+                                            <div class="bg-light mt-2 mb-4 p-4">
+                                                <h6>Academic Excellence: Students with the following credentials
+                                                    will be
+                                                    eligible for scholarship:</h6>
+                                                <p>The students getting first three positions in college will get
+                                                    following
+                                                    awards:-</p>
+                                                <div class="table-container">
+                                                    <table class="table table-responsive mt-2 non-bg-table mt-4">
+                                                        <thead>
+
+                                                            <tr>
+                                                                <th>First position</th>
+                                                                <td>Rs. 10,000.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Second position</th>
+                                                                <td>Rs. 7,500.00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Third position</th>
+                                                                <td>Rs. 5,000.00</td>
+                                                            </tr>
+
+                                                        </thead>
+
+                                                    </table>
+                                                </div>
+
+                                                <p>Additional amount as per following details to be paid to the
+                                                    students
+                                                    securing top three positions in the university:-</p>
+                                                <table class="table table-responsive mt-2 non-bg-table mt-4">
+                                                    <thead>
+
+                                                        <tr>
+                                                            <th>First position</th>
+                                                            <td>Rs. 10,000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Second position</th>
+                                                            <td>Rs. 7,500.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Third position</th>
+                                                            <td>Rs. 5,000.00</td>
+                                                        </tr>
+
+                                                    </thead>
+
+                                                </table>
+                                            </div>
+
 
                                         </div>
                                     </div>
                                 </div>
 
-                                <!-- 4th Accordion Item -->
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="5">
+                                    <h2 class="accordion-header" id="6">
                                         <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
+                                            data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false"
                                             aria-controls="collapse5">
-                                            B.Sc. (Biotech) & M.Sc. (Biotech)
+                                            Scholarships FOR B.P.T & M.P.T @ I.T.S Institute of Health and Allied
+                                            Sciences ,Ghaziabad
+                                            <span class="icon">▼</span>
                                         </button>
                                     </h2>
-                                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="5"
+                                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="6"
                                         data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body p-0">
+                                            <div class="bg-light mt-2 mb-4 p-4">
+                                                <table class="table table-responsive mt-2 non-bg-table mt-4">
+                                                    <thead>
+
+                                                        <tr>
+                                                            <th class="center-align ">BPT</th>
+                                                            <td><b>Category 1</b>
+                                                                <br><br>
+
+                                                                75% ABOVE IN PCB ENGLISH/HINDI EXCLUDING
+                                                                PHYSICAL EDUCATION
+                                                                :Rs. 5000/-
+
+                                                                (APPLICABLE FOR 1 YEAR ONLY)
+                                                                <br><br>
+
+                                                                <b>Category 2</b><br><br>
+
+                                                                80% AND ABOVE IN PCB ENGLISH/HINDI EXCLUDING
+                                                                PHYSICAL
+                                                                EDUCATION :Rs 8000/- (APPLICABLE FOR 1 YEAR
+                                                                ONLY)
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="center-align ">MPT</th>
+                                                            <td><b>Category 1</b>
+                                                                <br><br>
+
+                                                                BPT FROM I.T.S RS. 10000 PER YEAR
+                                                                <br><br>
+
+                                                                <b>Category 2</b><br><br>
+
+                                                                NON I.T.S RS. 10000/- PER YEAR
+
+                                                                (70% AND ABOVE MARKS IN BPT)
+                                                            </td>
+                                                        </tr>
+
+                                                    </thead>
+
+                                                </table>
+
+                                                <br>
+                                                <div>
+                                                    <h5>Scholarship for B Pharmacy @ I.T.S Institute of Health
+                                                        and Allied Sciences ,Ghaziabad</h5>
+                                                </div>
+                                                <p>1. SWD: Social Welfare Scholarship</p>
+                                                <p>2. Students who will get above 80% will get Rs 12000 in 1st
+                                                    year</p>
+                                                <h5>Scholarship for M Pharmacy @ I.T.S Institute of Health and
+                                                    Allied Sciences ,Ghaziabad</h5>
+                                                <h6>1. GPAT qualified students will get benefit from AICTE</h6>
+                                                <p>I.T.S Group has always been encouraging, promoting and
+                                                    creating avenues for a healthy competitive environment among
+                                                    students to excel in their academics. To recognize and
+                                                    appreciate the efforts of the students, institute offers
+                                                    scholarships to the meritorious students of all the courses.
+                                                    Selected schemes are also offered to aspiring students
+                                                    seeking admission to various courses at the institutes.</p>
+                                            </div>
+
 
                                         </div>
                                     </div>

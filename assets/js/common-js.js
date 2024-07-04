@@ -210,3 +210,11 @@ $(document).ready(function () {
   });
 });
 
+ 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  $(document).ready(function() {
+    $('.collapse').on('show.bs.collapse', function () {
+        $('.collapse').not(this).collapse('hide');
+    });
+});
